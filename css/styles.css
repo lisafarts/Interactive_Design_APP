@@ -1,10 +1,10 @@
-body { background-color: #333; color: #eee; }
+body { background-color: #FFFFFF; color: #8C1839; }
 
 #container {
-	background-color: #eee; 
+	background-color: #FFFFFF; 
 }
 .inset {
-	outline: solid 1px red;
+	/*outline: solid 1px red;*/
 	width: 90%;
 	min-width: 320px; 
 	max-width: 1200px;
@@ -13,10 +13,17 @@ body { background-color: #333; color: #eee; }
 	color: #333;
 }
 
-header 	{ background-color: #C8A839; padding: 10px; }
-nav 	{ background-color: #BB2020; padding: 10px; }
-#main 	{ background-color: #ffffff; padding: 10px; }
-footer 	{ background-color: #C8A839; padding: 10px; }
+header 	{ background-color: #FFFFFF; padding: 5px; }
+nav 	{ background-color: #FFFFFF; padding: 10px; }
+#main 	{ background-color: #FFFFFF; padding: 10px; }
+footer 	{ background-color: #8C1839; opacity: .6; padding: 10px; }
+
+#header_logo { 
+	white-space: nowrap;
+	overflow: hidden;	
+}
+
+img { max-width: 100%; height: auto; }
 
 /*-------------------------------------
 | header and footer
@@ -27,52 +34,54 @@ header .inset {
 	text-align: center;
 }
 footer .inset {
-	line-height: 100px;
+	line-height: 20px;
 	font-size: 30px;
 	text-align: center;
+	color: white;
 }
 /*-------------------------------------
 | nav
 -------------------------------------*/
-nav { text-align: center; }
+nav { text-align: center; min-height: 70px; }
 nav a {
 	display: inline-block;
 	width: 75px; 
 	line-height: 50px; 
 	border-radius: 5px;
-	background-color: #5E070E;
+	background-color: #A47F81;
 	color: #fff;
 }
-nav a:hover { background-color: #1E0204; color: #fff; text-decoration: none; }
-nav a.chosen { background-color: #E9BF36;  color: #000; }
+nav a:hover { background-color: #8C1839; color: #fff; text-decoration: none; }
+nav a.chosen { background-color: #8C1839; opacity: .6;  color: white; }
 
 /*-------------------------------------
 | Main
 -------------------------------------*/
-footer .inset { line-height: 600px; }
+footer .inset { line-height: 50px; }
 #main section { min-height: 300px; }
-#main section:nth-of-type(even) { background-color: #BED9DF; }
+#main section:nth-of-type(even) { background-color: #FFFFFF; }
 
 /*-------------------------------------
 | 12 Column Grid
 -------------------------------------*/
-.row > div { 
+/*.row > div { 
 	outline: solid 2px green;
 	min-height: 100px; 
-}
+}*/
 
 img { max-width: 100%; }
 
-/* Pinned Navigation */
-
+/*-------------------------------------
+| Pinned Navigation
+-------------------------------------*/
 #main section {
 	min-height: 600px;
 }
 
 .pinned nav {
 	position: fixed;
-	top: 0px;
-	left: 0px;
+	top: 0px; 
+	left: 0px; 
 	right: 0px;
 	z-index: 3000;
 }
@@ -80,6 +89,226 @@ img { max-width: 100%; }
 .pinned header {
 	margin-bottom: 70px;
 }
+
+
+/*-------------------------------------
+| Hamburger Menu Toggle
+-------------------------------------*/
+nav { min-height: 70px; }
+nav .glyphicon-menu-hamburger {
+	font-size: 30px;
+	color: #4A000C;
+	line-height: 50px;
+}
+nav a {
+	display: block;
+	margin: 10px auto;
+}
+
+@media screen and (min-width:700px) {
+	nav .glyphicon-menu-hamburger { display: none; }
+
+	nav a { display: inline-block; margin: 0px; }
+}
+
+
+
+/*-------------------------------------
+| Dynamic Class Switching
+-------------------------------------*/
+/*.myBox {
+	width: 300px;
+	line-height: 300px; 
+	text-align: center;
+	margin: auto;
+	background-color: yellow;
+	font-size: 20px;
+	transition: all .5s;
+}
+.myBox.one 		{ width: 500px; line-height: 200px; background-color: lime; }
+.myBox.two 		{ width: 100px; line-height: 500px; background-color: orange; }
+.myBox.three 	{ width: 700px; line-height: 400px; background-color: pink; }*/
+
+/* Glyphicons*/
+
+.glyphicon {
+	font-size: 40px;
+	color: #8C1839;
+	transition: .5s all;
+}
+.glyphicon:hover {
+	font-size: 50px;
+	color: #FFFFFF;
+}
+
+/*Tables*/
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #8C1839; opacity: .6; color: white;
+}
+
+.About {
+	font-size: 20px; 
+	font-family: 'Quicksand', sans-serif;
+	}
+
+/*th.About {
+	font-size: 20px; 
+	font-family: 'Quicksand', sans-serif;}*/
+
+
+h1 {
+	font-size: 50px; 
+	font-family: 'Quicksand', sans-serif;}
+
+.row {
+    margin-right: 0px;
+    margin-left:  0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
