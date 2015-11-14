@@ -189,11 +189,12 @@ my_box_class(); //when page loads
 $(window).resize(my_box_class); //whenever resized
 
 
+// Loading Screen
 
-
-
-
-
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut(1000);
+	});
 
 
 
