@@ -200,7 +200,11 @@ a.odd:hover {
 	background: url(../img/loadingscreen.gif) center no-repeat #fff;
 }
 
-
+.shareplug { border-radius: 5px;
+				border: none;
+			color: white;
+			background-color:rgba(140, 24, 57,0.55);
+}
 
 
 
