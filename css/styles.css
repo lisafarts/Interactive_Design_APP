@@ -35,9 +35,10 @@ header .inset {
 }
 footer .inset {
 	line-height: 20px;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: white;
+	font-family: 'Quicksand', sans-serif;
 }
 /*-------------------------------------
 | nav
@@ -51,14 +52,14 @@ nav a {
 	background-color: #A47F81;
 	color: #fff;
 }
-nav a:hover { background-color: #8C1839; color: #fff; text-decoration: none; }
+/*nav a:hover { background-color: #8C1839; color: #fff; text-decoration: none; }*/
 nav a.chosen { background-color: #8C1839; opacity: .6;  color: white; }
 
 /*-------------------------------------
 | Main
 -------------------------------------*/
 footer .inset { line-height: 50px; }
-#main section { min-height: 300px; }
+/*#main section { min-height: 300px; }*/
 #main section:nth-of-type(even) { background-color: #FFFFFF; }
 
 /*-------------------------------------
@@ -69,21 +70,22 @@ footer .inset { line-height: 50px; }
 	min-height: 100px; 
 }*/
 
-img { max-width: 100%; }
+img { max-width: 90%; }
 
 /*-------------------------------------
 | Pinned Navigation
 -------------------------------------*/
-#main section {
+/*#main section {
 	min-height: 600px;
-}
+}*/
 
 .pinned nav {
 	position: fixed;
 	top: 0px; 
-	left: 0px; 
 	right: 0px;
 	z-index: 3000;
+	background: white;
+	width: 100%;
 }
 
 .pinned header {
@@ -99,9 +101,10 @@ nav .glyphicon-menu-hamburger {
 	font-size: 30px;
 	color: #4A000C;
 	line-height: 50px;
+	text-decoration: none;
 }
 nav a {
-	display: block;
+	display: inline-block;
 	margin: 10px auto;
 }
 
@@ -133,13 +136,13 @@ nav a {
 
 .glyphicon {
 	font-size: 40px;
-	color: #8C1839;
+	color: #DF4975;
 	transition: .5s all;
 }
-.glyphicon:hover {
+/*.glyphicon:hover {
 	font-size: 50px;
-	color: #FFFFFF;
-}
+	color: #DF4975;
+}*/
 
 /*Tables*/
 
@@ -148,7 +151,7 @@ nav a {
 }
 
 .About {
-	font-size: 20px; 
+	font-size: 15px; 
 	font-family: 'Quicksand', sans-serif;
 	}
 
@@ -158,7 +161,7 @@ nav a {
 
 
 h1 {
-	font-size: 50px; 
+	font-size: 35px; 
 	font-family: 'Quicksand', sans-serif;}
 
 .row {
@@ -166,19 +169,42 @@ h1 {
     margin-left:  0px;
 }
 
+a.odd {
+    color: white;
+}
+
+a.even {
+    color: #8C1839;
+}
+
+a.even:hover {
+    color: #DF4975;
+    text-decoration: none;
+}
+
+a.odd:hover {
+    color: #F5D1F7;
+    text-decoration: none;
+}
 
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loadingscreen.gif) center no-repeat #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
+.shareplug { border-radius: 5px;
+				border: none;
+			color: white;
+			background-color:rgba(140, 24, 57,0.55);
+}
 
 
 

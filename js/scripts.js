@@ -1,3 +1,9 @@
+/*gif load screen*/
+
+$(document).ready(function(){
+    $('#loading_wrap').remove();
+});
+
 /*-------------------------------------
 | navigation
 -------------------------------------*/
@@ -136,7 +142,7 @@ function hamburger_click() {
 		if (nav_state == 'closed')
 		{
 			nav_state = 'open';
-			$('nav a').css({'display':'block'});
+			$('nav a').css({'display':'inline-block'});
 		}
 		else
 		{
@@ -183,18 +189,12 @@ my_box_class(); //when page loads
 $(window).resize(my_box_class); //whenever resized
 
 
+// Loading Screen
 
-
-
-
-
-
-
-
-
-
-
-
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut(1000);
+	});
 
 
 
